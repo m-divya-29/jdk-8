@@ -1,5 +1,6 @@
 package streams;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.function.BiFunction;
 import java.util.stream.IntStream;
@@ -29,25 +30,28 @@ class Dish{
 }
 public class StreamsTest {
     public static void main(String[] args) {
-        List<Dish> data = createDummyData();
+        List<Dish> data = new ArrayList<>(createDummyData());
         // data.stream().forEach(System.out::println);
 
         //Filter with Predicate
 
         //filter veg
         List<Dish> vegMenu = data.stream().filter(Dish::isVeg).collect(toList());
-        vegMenu.forEach(System.out::println);
+        //vegMenu.forEach(System.out::println);
 
         //filter non-veg
         List<Dish> nonVegMenu = data.stream().filter(dish -> !dish.isVeg()).collect(toList());
-        nonVegMenu.forEach(System.out::println);
+        //nonVegMenu.forEach(System.out::println);
+
+        //Filter unique elements
+        data.add(new Dish("🥕 VegDish 2", true));
+        System.out.println(data.stream().distinct().count() != data.size()); //false
     }
 
     private static List<Dish> createDummyData(){
         BiFunction<String, Boolean, Dish> fun = Dish::new;
         List<Dish> result = Stream.concat(IntStream.range(0, 5).mapToObj(i -> fun.apply("🥕 VegDish " + i, true)), IntStream.range(5, 10).mapToObj(i -> fun.apply("🍗 NonVegDish " + i, false))).toList();
 
-        //result.addAll(IntStream.range(0, 5).mapToObj(i -> fun.apply("VegDish " + i, true)).toList());
 
         return result;
     }
