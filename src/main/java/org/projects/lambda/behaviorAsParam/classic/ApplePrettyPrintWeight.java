@@ -1,4 +1,4 @@
-package org.projects.behaviorAsParam.classic;
+package org.projects.lambda.behaviorAsParam.classic;
 
 public class ApplePrettyPrintWeight implements IApplePrettyPrint {
     @Override

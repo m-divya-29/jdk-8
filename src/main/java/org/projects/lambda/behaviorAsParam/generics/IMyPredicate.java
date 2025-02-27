@@ -1,4 +1,4 @@
-package org.projects.behaviorAsParam.generics;
+package org.projects.lambda.behaviorAsParam.generics;
 
 public interface IMyPredicate<T>{
 

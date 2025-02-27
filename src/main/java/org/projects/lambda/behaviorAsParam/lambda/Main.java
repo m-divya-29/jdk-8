@@ -1,7 +1,7 @@
-package org.projects.behaviorAsParam.lambda;
+package org.projects.lambda.behaviorAsParam.lambda;
 
-import org.projects.behaviorAsParam.classic.Apple;
-import org.projects.behaviorAsParam.classic.Orange;
+import org.projects.lambda.behaviorAsParam.classic.Apple;
+import org.projects.lambda.behaviorAsParam.classic.Orange;
 
 import java.util.ArrayList;
 import java.util.Arrays;

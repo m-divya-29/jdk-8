@@ -1,9 +1,9 @@
-package org.projects.behaviorAsParam.classic;
+package org.projects.lambda.behaviorAsParam.classic;
 
-public class Apple {
+public class Orange {
     private int weight;
     private String color;
-    public Apple(int weight, String color) {
+    public Orange(int weight, String color) {
         this.weight = weight;
         this.color = color;
     }

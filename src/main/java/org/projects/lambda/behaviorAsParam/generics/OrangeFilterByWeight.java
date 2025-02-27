@@ -1,6 +1,6 @@
-package org.projects.behaviorAsParam.generics;
+package org.projects.lambda.behaviorAsParam.generics;
 
-import org.projects.behaviorAsParam.classic.Orange;
+import org.projects.lambda.behaviorAsParam.classic.Orange;
 
 public class OrangeFilterByWeight implements IMyPredicate<Orange> {
     @Override

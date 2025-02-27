@@ -1,6 +1,6 @@
-package org.projects.behaviorAsParam.generics;
+package org.projects.lambda.behaviorAsParam.generics;
 
-import org.projects.behaviorAsParam.classic.Apple;
+import org.projects.lambda.behaviorAsParam.classic.Apple;
 
 public class filterByColor implements IMyPredicate<Apple> {
     @Override

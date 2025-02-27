@@ -1,7 +1,7 @@
-package org.projects.behaviorAsParam.generics;
+package org.projects.lambda.behaviorAsParam.generics;
 
-import org.projects.behaviorAsParam.classic.Apple;
-import org.projects.behaviorAsParam.classic.Orange;
+import org.projects.lambda.behaviorAsParam.classic.Apple;
+import org.projects.lambda.behaviorAsParam.classic.Orange;
 
 import java.util.Arrays;
 import java.util.List;

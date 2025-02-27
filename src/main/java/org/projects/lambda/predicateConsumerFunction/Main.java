@@ -1,4 +1,4 @@
-package predicateConsumerFunction;
+package org.projects.lambda.predicateConsumerFunction;
 
 import java.util.ArrayList;
 import java.util.Arrays;
