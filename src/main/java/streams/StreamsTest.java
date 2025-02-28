@@ -44,14 +44,17 @@ public class StreamsTest {
         //nonVegMenu.forEach(System.out::println);
 
         //Filter unique elements
-        data.add(new Dish("🥕 VegDish 2", true));
-        System.out.println(data.stream().distinct().count() != data.size()); //false
-    }
+        Dish x = new Dish("🥕 VegDish 2", true);
+        //add duplicate dishes.
+        data.add(x);
+        data.add(x);
+
+        System.out.println(data.stream().distinct().count() != data.size()); //true 
+        }
 
     private static List<Dish> createDummyData(){
         BiFunction<String, Boolean, Dish> fun = Dish::new;
         List<Dish> result = Stream.concat(IntStream.range(0, 5).mapToObj(i -> fun.apply("🥕 VegDish " + i, true)), IntStream.range(5, 10).mapToObj(i -> fun.apply("🍗 NonVegDish " + i, false))).toList();
-
 
         return result;
     }
