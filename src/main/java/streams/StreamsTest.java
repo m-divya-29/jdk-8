@@ -45,7 +45,11 @@ public class StreamsTest {
 
         //Filter unique elements
         data.add(new Dish("🥕 VegDish 2", true));
-        System.out.println(data.stream().distinct().count() != data.size()); //false
+        //add duplicate dishes.
+        data.add(x);
+        data.add(x);
+
+        System.out.println(data.stream().distinct().count() != data.size()); // true
     }
 
     public static List<Dish> createDummyData(){
