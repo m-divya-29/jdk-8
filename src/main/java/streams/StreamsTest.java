@@ -45,7 +45,10 @@ public class StreamsTest {
 
         //Filter unique elements
         data.add(new Dish("🥕 VegDish 2", true));
+        
         //add duplicate dishes.
+        Dish x = new Dish("duplicate dummy", true);
+
         data.add(x);
         data.add(x);
 
