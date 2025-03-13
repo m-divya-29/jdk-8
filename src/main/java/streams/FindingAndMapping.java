@@ -42,7 +42,7 @@ public class FindingAndMapping {
 
         //or else method example --
         optionalDish = dummyData.stream().filter(x -> x.name.equals("doesn't exist")).findAny();
-        Optional<Dish> t = Optional.of(optionalDish.orElse(new Dish("dish coming soon...", true)));
+        Optional<Dish> t = Optional.of(optionalDish.orElse(new Dish("dish coming soon...", true, 100)));
         System.out.println(t);
 
         //find first

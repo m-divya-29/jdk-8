@@ -77,10 +77,18 @@ public class Reducing {
         Trader trader;
         int year;
         int value;
+
+        String currency;
         Transaction(int year, int value) {
             this.year = year;
             this.value = value;
         }
+        Transaction(Trader trader, int year, int value) {
+            this.trader = trader;
+            this.year = year;
+            this.value = value;
+        }
+
     }
 
     public  static  void example2() {
